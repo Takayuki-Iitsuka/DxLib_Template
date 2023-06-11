@@ -1,4 +1,4 @@
-// FPS
+// fps.h
 #pragma once
 
 #include <DxLib.h>
