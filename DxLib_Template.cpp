@@ -6,7 +6,8 @@
 
 //
 #define W_Title "DxLib Test..."
-#define W_Vsync TRUE
+#define W_Vsync TRUE // V-Syncを使うならTRUE
+#define W_Icon 555
 
 // プロトタイプ宣言
 int WINAPI WinMain(_In_	HINSTANCE, _In_opt_ HINSTANCE,
@@ -31,10 +32,10 @@ int WINAPI WinMain(_In_	HINSTANCE hInstance, _In_opt_ HINSTANCE	hPrevInstance,
 	SetWindowSizeChangeEnableFlag(TRUE);
 	//SetWindowSize(W_Width, W_Height);
 	SetMainWindowText(W_Title);
-	SetBackgroundColor(20, 20, 50);
+	SetBackgroundColor(10, 90, 150);
 	SetWaitVSyncFlag(W_Vsync);
 	SetAlwaysRunFlag(TRUE);
-	SetWindowIconID(555);
+	SetWindowIconID(W_Icon); // アイコン
 
 	if (DxLib_Init() == -1)
 	{
