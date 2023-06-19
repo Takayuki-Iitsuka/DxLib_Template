@@ -83,10 +83,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DxLib_Template.cpp" />
-    <ClCompile Include="fps.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="fps.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

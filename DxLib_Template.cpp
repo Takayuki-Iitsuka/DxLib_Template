@@ -1,7 +1,6 @@
 //
 //#include <windows.h>
 #include <DxLib.h>
-#include "fps.h"
 #include <cmath>
 
 //
@@ -30,7 +29,6 @@ int WINAPI WinMain(_In_	HINSTANCE hInstance, _In_opt_ HINSTANCE	hPrevInstance,
 	ChangeWindowMode(TRUE);
 	SetGraphMode(W_Width, W_Height, W_ColorBit);
 	SetWindowSizeChangeEnableFlag(TRUE);
-	//SetWindowSize(W_Width, W_Height);
 	SetMainWindowText(W_Title);
 	SetBackgroundColor(10, 90, 150);
 	SetWaitVSyncFlag(W_Vsync);
@@ -45,9 +43,6 @@ int WINAPI WinMain(_In_	HINSTANCE hInstance, _In_opt_ HINSTANCE	hPrevInstance,
 
 	SetDrawScreen(DX_SCREEN_BACK);
 
-	//FPS
-	FPSInit();
-
 	while (TRUE)
 	{
 		if (ProcessMessage() != 0)
@@ -60,9 +55,6 @@ int WINAPI WinMain(_In_	HINSTANCE hInstance, _In_opt_ HINSTANCE	hPrevInstance,
 		}
 		// main loop
 		{
-			FPSCheck();
-			FPSDraw();
-			FPSWait();
 
 			DrawString(50, 50, "Hello...! DxLib.......!", GetColor(250, 190, 255));
 			DrawString((W_Width / 2) - 150, (W_Height / 2) - 60, "Takayuki Iitsuka", GetColor(250, 190, 255));
