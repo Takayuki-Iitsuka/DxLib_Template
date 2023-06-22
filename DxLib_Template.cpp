@@ -1,5 +1,6 @@
+// DxLib テンプレート Project
+// DxLib_Template.cpp
 //
-//#include <windows.h>
 #include <DxLib.h>
 #include <cmath>
 
